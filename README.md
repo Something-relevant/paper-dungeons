@@ -1,4 +1,6 @@
-# Paper-Dungeons
+![Logo](/images/LogoType.svg)
+Format: ![Alt Text](#Paper Dungeons)
+
 ### A competitive mobile multiplayer mixed reality game
 
 the user places down paper and the game generates a procedural dungeon for the players to fight each other in. This game uses the vuforia within the Unity Engine.
