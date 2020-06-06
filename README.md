@@ -1,5 +1,4 @@
-![Logo](/images/LogoType.svg)
-Format: ![Alt Text](#Paper Dungeons)
+![Logo](/Images/LogoType.png)
 
 ### A competitive mobile multiplayer mixed reality game
 
