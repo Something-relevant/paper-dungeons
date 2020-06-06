@@ -1,6 +1,8 @@
 # Paper-Dungeons
 ### A competitive mobile multiplayer mixed reality game
 
+the user places down paper and the game generates a procedural dungeon for the players to fight each other in. This game uses the vuforia within the Unity Engine.
+
 -[] Procedural Dungeons
 
 -[x] AR image recognition
@@ -10,8 +12,6 @@
 -[] Single Player Mechanics Implemented
 
 -[] Multiplayer Implemented
-
-the user places down paper and the game generates a procedural dungeon for the players to fight each other in. This game uses the vuforia within the Unity Engine.
 
 ## How To Play
 **Download Build and place apk onto the players phone or download from your phone here**
