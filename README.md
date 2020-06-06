@@ -2,9 +2,13 @@
 ### A competitive mobile multiplayer mixed reality game
 
 -[]Procedural Dungeons
+
 -[x]AR image recognition
+
 -[x]Image Plane Communication
+
 -[]Single Player Mechanics Implemented
+
 -[]Multiplayer Implemented
 
 the user places down paper and the game generates a procedural dungeon for the players to fight each other in. This game uses the vuforia within the Unity Engine.
