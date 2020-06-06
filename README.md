@@ -1,4 +1,4 @@
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Logotype.png" alt="alt text" width="100" height="100">
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Logotype.png" alt="alt text" width="70%" height="70%">
 
 ### A competitive mobile multiplayer mixed reality game
 
