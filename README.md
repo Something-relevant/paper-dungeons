@@ -4,7 +4,9 @@
 
 the user places down paper and the game generates a procedural dungeon for the players to fight each other in. This game uses the vuforia within the Unity Engine.
 
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="70%" height="50%">
+
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="50%" height="50%">
+
 
 -[] Procedural Dungeons
 
@@ -16,7 +18,9 @@ the user places down paper and the game generates a procedural dungeon for the p
 
 -[] Multiplayer Implemented
 
+
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="50%" height="50%">
+
 
 ## How To Play
 **Download Build and place apk onto the players phone or download from your phone here**
@@ -30,7 +34,9 @@ the user places down paper and the game generates a procedural dungeon for the p
 1. Dungeons and linking Corridors spawn
 1. Players must fight to the death till a certain score  is reached
 
+
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak02.png" alt="alt text" align="center" width="50%" height="50%">
+
 
 ## Built With
 
@@ -38,10 +44,13 @@ the user places down paper and the game generates a procedural dungeon for the p
 * Vuforia AR Engine
 * C#
 
+
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak03.png" alt="alt text" align="center" width="50%" height="50%">
+
 
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
 
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="50%" height="50%">
