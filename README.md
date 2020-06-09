@@ -35,7 +35,7 @@ the user places down paper and the game generates a procedural dungeon for the p
 1. Players must fight to the death till a certain score  is reached
 
 
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak02.png" alt="alt text" align="center" width="50%" height="50%">
+
 
 
 ## Built With
@@ -45,7 +45,7 @@ the user places down paper and the game generates a procedural dungeon for the p
 * C#
 
 
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak03.png" alt="alt text" align="center" width="50%" height="50%">
+
 
 
 ## License
