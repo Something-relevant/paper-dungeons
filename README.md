@@ -1,11 +1,10 @@
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/LogoType2.png" alt="alt text" align="center" width="70%" height="70%">
 
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="50%" height="50%">
+
 ### A competitive mobile multiplayer mixed reality game
 
 the user places down paper and the game generates a procedural dungeon for the players to fight each other in. This game uses the vuforia within the Unity Engine.
-
-
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="50%" height="50%">
 
 
 -[] Procedural Dungeons
@@ -17,9 +16,6 @@ the user places down paper and the game generates a procedural dungeon for the p
 -[] Single Player Mechanics Implemented
 
 -[] Multiplayer Implemented
-
-
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="50%" height="50%">
 
 
 ## How To Play
@@ -35,17 +31,11 @@ the user places down paper and the game generates a procedural dungeon for the p
 1. Players must fight to the death till a certain score  is reached
 
 
-
-
-
 ## Built With
 
 * Unity 2019.3.3f1
 * Vuforia AR Engine
 * C#
-
-
-
 
 
 ## License
