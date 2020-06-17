@@ -6,6 +6,8 @@ public class LevelGenerator2 : MonoBehaviour
 {
     public Transform[] startingPositions;
     public GameObject[] rooms;
+    public GameObject player;
+    public GameObject prison;
     //room index 0 = LR, index 1 = LRB, index 2 == LRT, index 3 == LRTB
 
     public float roomWidth;
@@ -23,8 +25,12 @@ public class LevelGenerator2 : MonoBehaviour
     private int downCount;
     private float timeBtwnRoom;
 
+    private bool isImageFound = false;
     public bool stopGeneration = false;
-    
+ 
+
+
+
 
     void Start()
     {
@@ -35,6 +41,9 @@ public class LevelGenerator2 : MonoBehaviour
         //creates room
         Instantiate(rooms[0], transform.position, Quaternion.identity);
 
+      
+        //GameObject.Destroy(prison);
+
         direction = Random.Range(1, 6);
 
 
@@ -43,7 +52,7 @@ public class LevelGenerator2 : MonoBehaviour
      public void Update()
     {
 
-            if (stopGeneration == false && timeBtwnRoom <= 0)
+        if (stopGeneration == false && timeBtwnRoom <= 0)
             {
                 Move();
                 timeBtwnRoom = startTimeBtwnRoom;
@@ -55,109 +64,115 @@ public class LevelGenerator2 : MonoBehaviour
 
             }
 
+        if (stopGeneration == true)
+        {
+            GameObject.Destroy(prison);
+        }
+
     }
 
     // if == effects odds of going left or right more than down
     private void Move()
-    {
-
-        if(direction == 1 || direction == 2) //right
         {
-            downCount = 0;
 
-            if (transform.position.x < maxX)
+            if (direction == 1 || direction == 2) //right
             {
-                Vector2 newPosition = new Vector2(transform.position.x + roomWidth, transform.position.y);
-                transform.position = newPosition;
+                downCount = 0;
 
-                roomRand = Random.Range(0, rooms.Length);
-                Instantiate(rooms[roomRand], transform.position, Quaternion.identity);
-
-                direction = Random.Range(1, 6);
-                if (direction == 3) //prevents overlapping
+                if (transform.position.x < maxX)
                 {
-                    direction = 2;
-                }
+                    Vector2 newPosition = new Vector2(transform.position.x + roomWidth, transform.position.y);
+                    transform.position = newPosition;
 
-                else if (direction == 4) //prevents overlapping
+                    roomRand = Random.Range(0, rooms.Length);
+                    Instantiate(rooms[roomRand], transform.position, Quaternion.identity);
+
+                    direction = Random.Range(1, 6);
+                    if (direction == 3) //prevents overlapping
+                    {
+                        direction = 2;
+                    }
+
+                    else if (direction == 4) //prevents overlapping
+                    {
+                        direction = 5;
+                    }
+                }
+                else
                 {
                     direction = 5;
                 }
             }
-            else
+
+            else if (direction == 3 || direction == 4) //left
             {
-                direction = 5;
-            }
-        }
+                downCount = 0;
 
-        else if (direction == 3 || direction == 4) //left
-        {
-            downCount = 0;
-
-            if (transform.position.x > minX)
-            {
-                Vector2 newPosition = new Vector2(transform.position.x - roomWidth, transform.position.y);
-                transform.position = newPosition;
-
-                roomRand = Random.Range(0, rooms.Length);
-                Instantiate(rooms[roomRand], transform.position, Quaternion.identity);
-
-                direction = Random.Range(3, 6);
-            }
-
-            else
-            {
-                direction = 5;
-            }
-
-        }
-
-        else if(direction == 5) //down
-        {
-            downCount++;
-
-            if (transform.position.y > minY)
-            {
-
-                //checks if room above has opening and destroys if not and adds one that does
-                Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
-
-                if(roomDetection.GetComponent<RoomTypeScript>().roomType != 1
-                    && roomDetection.GetComponent<RoomTypeScript>().roomType != 3)
+                if (transform.position.x > minX)
                 {
-                    if (downCount >= 2)
-                    {
-                        roomDetection.GetComponent<RoomTypeScript>().DestroyRoom();
-                        Instantiate(rooms[3], transform.position, Quaternion.identity);
-                    }
+                    Vector2 newPosition = new Vector2(transform.position.x - roomWidth, transform.position.y);
+                    transform.position = newPosition;
 
-                    else
-                    {
-                        roomDetection.GetComponent<RoomTypeScript>().DestroyRoom();
+                    roomRand = Random.Range(0, rooms.Length);
+                    Instantiate(rooms[roomRand], transform.position, Quaternion.identity);
 
-                        int randBottomRoom = Random.Range(1, 4);
-
-                        if (randBottomRoom == 2)
-                        {
-                            randBottomRoom = 1;
-                        }
-
-                        Instantiate(rooms[randBottomRoom], transform.position, Quaternion.identity);
-                    }
+                    direction = Random.Range(3, 6);
                 }
 
-                Vector2 newPosition = new Vector2(transform.position.x, transform.position.y - roomWidth);
-                transform.position = newPosition;
+                else
+                {
+                    direction = 5;
+                }
 
-                roomRand = Random.Range(2,4);
-                Instantiate(rooms[roomRand], transform.position, Quaternion.identity);
-
-                direction = Random.Range(1, 6);
             }
 
-            else
+            else if (direction == 5) //down
             {
-                stopGeneration = true;
+                downCount++;
+
+                if (transform.position.y > minY)
+                {
+
+                    //checks if room above has opening and destroys if not and adds one that does
+                    Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
+                    var roomTypeComponent = roomDetection.GetComponent<RoomTypeScript>();
+
+                    if (roomTypeComponent.roomType != 1 && roomTypeComponent.roomType != 3)
+                    {
+                        if (downCount >= 2)
+                        {
+                            roomTypeComponent.DestroyRoom();
+                            Instantiate(rooms[3], transform.position, Quaternion.identity);
+                        }
+
+                        else
+                        {
+                            roomTypeComponent.DestroyRoom();
+
+                            int randBottomRoom = Random.Range(1, 4);
+
+                            if (randBottomRoom == 2)
+                            {
+                                randBottomRoom = 1;
+                            }
+
+                            Instantiate(rooms[randBottomRoom], transform.position, Quaternion.identity);
+                        }
+                    }
+
+                    Vector2 newPosition = new Vector2(transform.position.x, transform.position.y - roomWidth);
+                    transform.position = newPosition;
+
+                    roomRand = Random.Range(2, 4);
+                    Instantiate(rooms[roomRand], transform.position, Quaternion.identity);
+
+                    direction = Random.Range(1, 6);
+                }
+
+                else
+                {
+                    stopGeneration = true;
+                }
             }
         }
 
@@ -168,4 +183,4 @@ public class LevelGenerator2 : MonoBehaviour
     }
 
 
-}
+
