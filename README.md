@@ -42,6 +42,8 @@ research project about procedural level generation
 
 *feel free to use the pre-made hi-res posters in the posters branch
 
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/PosterLowRes.png" alt="How It Works01" align="center" width="50%" height="50%">
+
 1. Change Branch to Posters
 2. Save Posters folder
 3. Open Processing and change langauge to Python
