@@ -4,31 +4,61 @@
 
 ### A competitive mobile multiplayer mixed reality game
 
-the user places down paper and the game generates a procedural dungeon for the players to fight each other in. This game uses the vuforia within the Unity Engine.
+<a rel="video" href="https://youtu.be/21Mcv413tt8">Watch prototype footage here</a>
+
+All testing and recordings were made on a 2019 Samsung A30
+
+The user places down paper and the game generates a procedural dungeon for the players to fight each other in. 
+This game uses the vuforia within the Unity Engine and was conducted as a proof of concept for a university 
+research project about procedural level generation
 
 
--[] Procedural Dungeons
+-[x] Procedural Dungeons
 
 -[x] AR image recognition
 
 -[x] Image Plane Communication
 
+-[x] Unique Poster Builder
+
 -[] Single Player Mechanics Implemented
 
--[] Multiplayer Implemented
+-[] Tile Creator and Exporter
 
 
 ## How To Play
-**Download Build and place apk onto the players phone or download from your phone here**
+**Download Build from the Android Build branch**
 
-1. Press Play and choose either "Single Player or Multiplayer"
-  1. If multiplayer - wait for players to join  
-1. The player/s arranges physical cards with onscreen instructions 
-1. Taps "Next"
-1. Uses the phones camera to scan the cards
-1. Taps "Ready
-1. Dungeons and linking Corridors spawn
-1. Players must fight to the death till a certain score  is reached
+*you need the poster printed or on another screen to play
+
+1. Change branch to Android_Build
+2. Download Apk and install it on your android phone
+  2a. To install, transfer into .../files/downloads and click on the apk file
+  2b. follow install instructions and click install
+3. Click on the app and enjoy
+
+
+## How To Make Your Unique Poster
+
+*feel free to use the pre-made hi-res posters in the posters branch
+
+1. Change Branch to Posters
+2. Save Posters folder
+3. Open Processing and change langauge to Python
+4. File > Open Project > .../Posters/Poster_Builder 
+5. Click play and a poster should save in Poster_Builder folder
+6. You now have your unique Paper Dungeons Poster
+
+Posters save in a very high resolution and may crash Processing.py
+change the variable resolution to a higher number to lower the resolution
+
+
+## How Does It Work
+
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/HowItWorks01.png" alt="How It Works01" align="center" width="90%" height="90%">
+
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/HowItWorks02.png" alt="How It Works01" align="center" width="90%" height="90%">
+
 
 
 ## Built With
@@ -42,5 +72,8 @@ the user places down paper and the game generates a procedural dungeon for the p
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
-
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="50%" height="50%">
+
+
+
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%203%404x.png" alt="Zenn" align="center" width="5%" height="5%">
