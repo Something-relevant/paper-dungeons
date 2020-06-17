@@ -64,9 +64,11 @@ change the variable resolution to a higher number to lower the resolution
 
 * The Procedural Dungeon
 
-This procedural generation is made along a 2D grid with defined boundarys. Within the defined boundaries a pathway is created from an random selection of four 4 different arrays (Left-Right Opening, Left-Right-Top Opening, Left-Right-Bottom Opening, Left-Right-Top-Bottom Opening) which can contain an infinite amount of variations. The rooms communicate with each other to form a direct path from the top to the bottom so the level is never closed off.
+This procedural generation is made along a 50x40 2D grid with defined boundarys. Within the defined boundaries a pathway is created from an random selection of four 4 different arrays (Left-Right Opening, Left-Right-Top Opening, Left-Right-Bottom Opening, Left-Right-Top-Bottom Opening) which can contain an infinite amount of variations. 
 
-These room variations are made from 10m2 grid with an object spawner occupying 1 square. The Object Spawer contains an array of 1m2 sized objects(tiles, enemies, hazards, consumeables, etc). The odds of what is spawned is defined by the amount of times an object appears in the array.
+Each room spawned communicates with the previous room to form a random path from the top to the bottom while ensuring there is a doorway between each room. After this pathway is created, the empty slots in the grid an filled up with random rooms.
+
+These room variations are made from 10x10 grid with an object spawner occupying 1 square. The Object Spawer contains an array of 1x1 sized objects(tiles, enemies, hazards, consumeables, etc). The odds of what is spawned is defined by the amount of times an object appears in the array.
 
 
 
