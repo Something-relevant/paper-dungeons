@@ -9,7 +9,7 @@
 All testing and recordings were made on a 2019 Samsung A30</br>
 
 The user places down paper and the game generates a procedural dungeon for the players to fight each other in.</br>
-This game uses the vuforia within the Unity Engine and was conducted as a proof of concept for a university </br>
+This game uses the Vuforia within the Unity Engine and was conducted as a proof of concept for a university </br>
 research project about procedural level generation
 
 
@@ -29,7 +29,7 @@ research project about procedural level generation
 ## How To Play
 **Download Build from the Android Build branch**
 
-*you need the poster printed or on another screen to play</br>
+*you need the poster printed or on another screen to play</br>*
 
 1. Change branch to Android_Build</br>
 2. Download Apk and install it on your android phone</br>
@@ -40,14 +40,14 @@ research project about procedural level generation
 
 ## How To Make Your Unique Poster
 
-*feel free to use the pre-made hi-res posters in the posters branch
+*feel free to use the pre-made hi-res posters in the posters branch*
 
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/PosterLowRes.png" alt="How It Works01" align="center" width="50%" height="50%">
 
 1. Change Branch to Posters
 2. Save Posters folder
-3. Open Processing and change langauge to Python
-4. File > Open Project > .../Posters/Poster_Builder 
+3. Open Processing and change language to Python
+4. File > Open Project > .../Posters/Poster_Builder
 5. Click play and a poster should save in Poster_Builder folder
 6. You now have your unique Paper Dungeons Poster
 
@@ -62,6 +62,13 @@ change the variable resolution to a higher number to lower the resolution
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/HowItWorks02.png" alt="How It Works01" align="center" width="100%" height="100%">
 
 
+* The Procedural Dungeon
+
+This procedural generation is made along a 2D grid with defined boundarys. Within the defined boundaries a pathway is created from an random selection of four 4 different arrays (Left-Right Opening, Left-Right-Top Opening, Left-Right-Bottom Opening, Left-Right-Top-Bottom Opening) which can contain an infinite amount of variations. The rooms communicate with each other to form a direct path from the top to the bottom so the level is never closed off.
+
+These room variations are made from 10m2 grid with an object spawner occupying 1 square. The Object Spawer contains an array of 1m2 sized objects(tiles, enemies, hazards, consumeables, etc). The odds of what is spawned is defined by the amount of times an object appears in the array.
+
+
 
 ## Built With
 
@@ -69,6 +76,11 @@ change the variable resolution to a higher number to lower the resolution
 * Vuforia AR Engine
 * C#
 
+## Refrences
+
+<a rel="video" href="https://www.youtube.com/channel/UC9Z1XWw1kmnvOOFsj6Bzy2g/featured"> * Blackthornprod - Youtube</a></br>
+<a rel="video" href="https://www.youtube.com/channel/UC0UD2KSZESc5PCPzTBZC_dw"> * SunnyValleyStudio - Youtube</a></br>
+<a rel="video" href="https://www.gamasutra.com/view/news/340190/How_to_effectively_use_procedural_generation_in_games.php"> * Darius Kazemi - How_to_effectively_use_procedural_generation_in_games - Gamasutra</a></br>
 
 ## License
 
