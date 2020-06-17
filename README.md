@@ -78,9 +78,9 @@ These room variations are made from 10m2 grid with an object spawner occupying 1
 
 ## Refrences
 
-<a rel="video" href="https://www.youtube.com/channel/UC9Z1XWw1kmnvOOFsj6Bzy2g/featured"> * Blackthornprod - Youtube</a></br>
-<a rel="video" href="https://www.youtube.com/channel/UC0UD2KSZESc5PCPzTBZC_dw"> * SunnyValleyStudio - Youtube</a></br>
-<a rel="video" href="https://www.gamasutra.com/view/news/340190/How_to_effectively_use_procedural_generation_in_games.php"> * Darius Kazemi - How_to_effectively_use_procedural_generation_in_games - Gamasutra</a></br>
+<a rel="video" href="https://www.youtube.com/channel/UC9Z1XWw1kmnvOOFsj6Bzy2g/featured"> Blackthornprod - Youtube</a></br>
+<a rel="video" href="https://www.youtube.com/channel/UC0UD2KSZESc5PCPzTBZC_dw"> SunnyValleyStudio - Youtube</a></br>
+<a rel="video" href="https://www.gamasutra.com/view/news/340190/How_to_effectively_use_procedural_generation_in_games.php"> Darius Kazemi - How_to_effectively_use_procedural_generation_in_games - Gamasutra</a></br>
 
 ## License
 
