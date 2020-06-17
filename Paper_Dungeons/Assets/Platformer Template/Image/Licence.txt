@@ -1,7 +1,0 @@
-name: 2d Potions [16x16]
-name of license: CC-BY 4.0
-license and copyright: https://opengameart.org/users/armisius
-
-name: Animated Pixel Adventurer
-name of license: CC-BY 4.0
-license and copyright: https://rvros.itch.io/animated-pixel-hero
