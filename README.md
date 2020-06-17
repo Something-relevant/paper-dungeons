@@ -8,8 +8,8 @@
 
 All testing and recordings were made on a 2019 Samsung A30</br>
 
-The user places down paper and the game generates a procedural dungeon for the players to fight each other in. 
-This game uses the vuforia within the Unity Engine and was conducted as a proof of concept for a university 
+The user places down paper and the game generates a procedural dungeon for the players to fight each other in.</br>
+This game uses the vuforia within the Unity Engine and was conducted as a proof of concept for a university </br>
 research project about procedural level generation
 
 
@@ -32,8 +32,8 @@ research project about procedural level generation
 *you need the poster printed or on another screen to play</br>
 
 1. Change branch to Android_Build</br>
-2. Download Apk and install it on your android phone
-  2a. To install, transfer into .../files/downloads and click on the apk file
+2. Download Apk and install it on your android phone</br>
+  2a. To install, transfer into .../files/downloads and click on the apk file</br>
   2b. follow install instructions and click install</br>
 3. Click on the app and enjoy</br>
 
@@ -74,6 +74,4 @@ change the variable resolution to a higher number to lower the resolution
 
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%2043LineBreak01.png" alt="alt text" align="center" width="50%" height="50%">
 
-
-
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%203%404x.png" alt="Zenn" align="center" width="20%" height="20%">
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%203%404x.png" alt="Zenn" align="center" width="10%" height="10%">
