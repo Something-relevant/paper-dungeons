@@ -62,6 +62,13 @@ change the variable resolution to a higher number to lower the resolution
 <img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/HowItWorks02.png" alt="How It Works01" align="center" width="100%" height="100%">
 
 
+* The Procedural Dungeon
+
+This procedural generation is made along a 2D grid with defined boundarys. Within the defined boundaries a pathway is created from an random selection of four 4 different arrays (Left-Right Opening, Left-Right-Top Opening, Left-Right-Bottom Opening, Left-Right-Top-Bottom Opening) which can contain an infinite amount of variations. The rooms communicate with each other to form a direct path from the top to the bottom so the level is never closed off.
+
+These room variations are made from 10m2 grid with an object spawner occupying 1 square. The Object Spawer contains an array of 1m2 sized objects(tiles, enemies, hazards, consumeables, etc). The odds of what is spawned is defined by the amount of times an object appears in the array.
+
+
 
 ## Built With
 
@@ -69,6 +76,11 @@ change the variable resolution to a higher number to lower the resolution
 * Vuforia AR Engine
 * C#
 
+## Refrences
+
+* Blackthornprod - Youtube
+* SunnyValleyStudio - Youtube
+* Darius Kazemi - How_to_effectively_use_procedural_generation_in_games - Gamasutra
 
 ## License
 
