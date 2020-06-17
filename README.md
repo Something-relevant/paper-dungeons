@@ -4,9 +4,9 @@
 
 ### A competitive mobile multiplayer mixed reality game
 
-<a rel="video" href="https://youtu.be/21Mcv413tt8">Watch prototype footage here</a>
+<a rel="video" href="https://youtu.be/21Mcv413tt8">Watch prototype footage here</a></br>
 
-All testing and recordings were made on a 2019 Samsung A30
+All testing and recordings were made on a 2019 Samsung A30</br>
 
 The user places down paper and the game generates a procedural dungeon for the players to fight each other in. 
 This game uses the vuforia within the Unity Engine and was conducted as a proof of concept for a university 
@@ -29,13 +29,13 @@ research project about procedural level generation
 ## How To Play
 **Download Build from the Android Build branch**
 
-*you need the poster printed or on another screen to play
+*you need the poster printed or on another screen to play</br>
 
-1. Change branch to Android_Build
+1. Change branch to Android_Build</br>
 2. Download Apk and install it on your android phone
   2a. To install, transfer into .../files/downloads and click on the apk file
-  2b. follow install instructions and click install
-3. Click on the app and enjoy
+  2b. follow install instructions and click install</br>
+3. Click on the app and enjoy</br>
 
 
 ## How To Make Your Unique Poster
@@ -49,15 +49,15 @@ research project about procedural level generation
 5. Click play and a poster should save in Poster_Builder folder
 6. You now have your unique Paper Dungeons Poster
 
-Posters save in a very high resolution and may crash Processing.py
+Posters save in a very high resolution and may crash Processing.py </br>
 change the variable resolution to a higher number to lower the resolution
 
 
 ## How Does It Work
 
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/HowItWorks01.png" alt="How It Works01" align="center" width="90%" height="90%">
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/HowItWorks01.png" alt="How It Works01" align="center" width="110%" height="110%">
 
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/HowItWorks02.png" alt="How It Works01" align="center" width="90%" height="90%">
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/HowItWorks02.png" alt="How It Works01" align="center" width="100%" height="100%">
 
 
 
@@ -76,4 +76,4 @@ change the variable resolution to a higher number to lower the resolution
 
 
 
-<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%203%404x.png" alt="Zenn" align="center" width="5%" height="5%">
+<img src="https://github.com/Something-relevant/paper-dungeons/blob/master/Images/Asset%203%404x.png" alt="Zenn" align="center" width="20%" height="20%">
